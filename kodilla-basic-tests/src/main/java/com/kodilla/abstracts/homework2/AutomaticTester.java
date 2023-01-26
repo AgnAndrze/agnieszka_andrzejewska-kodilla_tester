@@ -1,7 +1,5 @@
 package com.kodilla.abstracts.homework2;
-
 import com.kodilla.abstracts.homework2.Job;
-
 public class AutomaticTester extends Job {
     public AutomaticTester(int salary) {
         super(salary);
