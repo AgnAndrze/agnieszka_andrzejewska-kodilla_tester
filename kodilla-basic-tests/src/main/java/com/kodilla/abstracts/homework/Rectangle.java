@@ -4,11 +4,17 @@ package com.kodilla.abstracts.homework;
 public class Rectangle extends Shape {
     private int sideA;
     private int sideB;
-    private int sideC;
-    public Rectangle(int sideA, int sideB, int sideC) {
-        super(sideA, sideB, sideC);
+    public int getSideB() {
+        return sideB;
     }
-//pole powierzchni
+    public int getSideA() {
+        return sideA;
+    }
+    public Rectangle(int sideA, int sideB) {
+        this.sideA = sideA;
+        this.sideB = sideB;
+    }
+    //pole powierzchni
     @Override
     public int getArea() {
         int result = 0;

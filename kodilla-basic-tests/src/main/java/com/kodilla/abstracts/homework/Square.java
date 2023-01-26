@@ -3,12 +3,13 @@ package com.kodilla.abstracts.homework;
 // kwadrat
 public class Square extends Shape {
     private int sideA;
-    private int sideB;
-    private int sideC;
-    public Square (int sideA, int sideB, int sideC) {
-        super(sideA, sideB, sideC);
+    public int getSideA() {
+        return sideA;
     }
-//pole powierzchni
+    public Square(int sideA) {
+        this.sideA = sideA;
+    }
+    //pole powierzchni
     @Override
     public int getArea() {
        int result = 0;
