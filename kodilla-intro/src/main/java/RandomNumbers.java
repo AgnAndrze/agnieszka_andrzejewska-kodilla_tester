@@ -21,6 +21,5 @@ public class RandomNumbers {
         }
         System.out.println("Maksymalna wylosowana liczba to: " + maxNumber);
         System.out.println("Minimalna wylosowana liczba to: " + minNumber);
-        return;
     }
 }

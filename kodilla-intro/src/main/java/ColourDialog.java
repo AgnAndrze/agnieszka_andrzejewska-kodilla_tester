@@ -4,8 +4,8 @@
             Scanner scanner = new Scanner(System.in);
             while (true) {
                 System.out.println("Wybierz literę (N-niebieski, C-czerwony, R-różowy, Z-zielony):");
-                String calc = scanner.nextLine().trim().toUpperCase();
-                switch (calc) {
+                String choose = scanner.nextLine().trim().toUpperCase();
+                switch (choose) {
                     case "N":
                         return "niebieski";
                     case "C":
