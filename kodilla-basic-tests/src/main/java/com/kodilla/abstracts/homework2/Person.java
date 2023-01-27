@@ -3,6 +3,7 @@ package com.kodilla.abstracts.homework2;
 public class Person {
     private String firstName;
     private int age;
+    private Job job;
     //konstruktor
     public Person (String firstName, int age) {
         this.firstName = firstName;
