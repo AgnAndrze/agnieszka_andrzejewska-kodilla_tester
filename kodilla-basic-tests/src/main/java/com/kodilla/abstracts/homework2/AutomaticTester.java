@@ -12,4 +12,8 @@ public class AutomaticTester extends Job {
     public void giveSalary() {
         System.out.println("Wynagrodzenie to: " + getSalary());
     }
+    @Override
+    public void giveJob() {
+        System.out.println("Stanowisko to: tester automatyczny");
+    }
 }

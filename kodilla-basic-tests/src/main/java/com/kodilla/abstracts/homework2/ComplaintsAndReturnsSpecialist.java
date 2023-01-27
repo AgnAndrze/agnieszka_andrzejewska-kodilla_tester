@@ -12,4 +12,8 @@ public class ComplaintsAndReturnsSpecialist extends Job {
     public void giveSalary() {
         System.out.println("Wynagrodzenie to: " + getSalary());
     }
+    @Override
+    public void giveJob() {
+        System.out.println("Stanowisko to: specjalista ds. reklamacji i zwrotów");
+    }
 }
