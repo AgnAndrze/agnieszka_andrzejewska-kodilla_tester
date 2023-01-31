@@ -3,25 +3,25 @@ package com.kodilla.basic_assertion;
 public class Application {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        int a = 5;
-        int b = 8;
+        double a = 5.6;
+        double b = 5.8;
         int c = 2;
-        int sumResult = calculator.sum(a, b);
-        boolean correct = ResultChecker.assertEquals(13,sumResult);
+        double sumResult = calculator.sum(a, b);
+        boolean correct = ResultChecker.assertEquals(11.4,sumResult,0.1);
         if (correct) {
             System.out.println("Metoda sum działa poprawnie dla liczb  " + a + " i " + b);
         } else {
             System.out.println("Metoda sum nie działa poprawnie dla liczb " + a + " i " + b);
         }
-        int substractResult = calculator.substract(a, b);
-        correct = ResultChecker.assertEquals(-3, substractResult);
+        double substractResult = calculator.substract(a, b);
+        correct = ResultChecker.assertEquals(-0.2, substractResult, 0.1);
         if (correct) {
             System.out.println("Metoda substract działa poprawnie dla liczb " + a + " i " + b);
         } else {
             System.out.println("Metoda substract nie działa poprawnie dla liczb " + a + " i " + b);
         }
-        int powerResult = calculator.pow(a, c);
-        correct = ResultChecker.assertEquals(25, powerResult);
+        double powerResult = calculator.pow(a,c);
+        correct = ResultChecker.assertEquals(31.36, powerResult, 0.01);
         if (correct) {
             System.out.println("Metoda power działa poprawnie dla liczb " + a + " i " + c);
         } else {
