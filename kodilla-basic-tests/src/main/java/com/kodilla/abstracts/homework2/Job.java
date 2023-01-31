@@ -6,7 +6,7 @@ public abstract class Job {
     private String responsibilities;
     public Job(int salary) {
         this.salary = salary;
-        }
+    }
     public int getSalary() {
         return salary;
     }
@@ -16,4 +16,5 @@ public abstract class Job {
     public abstract void giveResponsibilities();
     public abstract void giveSalary();
     public abstract void giveJob();
+
 }

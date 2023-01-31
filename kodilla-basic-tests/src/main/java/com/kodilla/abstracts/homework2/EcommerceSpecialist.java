@@ -16,6 +16,6 @@ public class EcommerceSpecialist extends Job {
     }
     @Override
     public void giveJob() {
-        System.out.println("Stanowisko to: specjalista ds. e-commerce");
+        System.out.println("Specjalista ds. e-commerce");
     }
 }

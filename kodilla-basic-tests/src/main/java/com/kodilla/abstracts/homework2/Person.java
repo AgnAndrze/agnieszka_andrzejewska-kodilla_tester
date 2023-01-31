@@ -5,9 +5,10 @@ public class Person {
     private int age;
     private Job job;
     //konstruktor
-    public Person (String firstName, int age) {
+    public Person (String firstName, int age, Job job) {
         this.firstName = firstName;
         this.age = age;
+        this.job = job;
     }
     //gettery
     public String getFirstName() {
@@ -16,7 +17,13 @@ public class Person {
     public int getAge() {
         return age;
     }
-    public void process(Job job) {
+    public Job giveJob() {
+        return job;
+    }
+    public void process() {
         System.out.println(getFirstName() + " "+ getAge() + " ");
+        job.giveJob();
+        job.giveSalary();
+        job.giveResponsibilities();
     }
 }

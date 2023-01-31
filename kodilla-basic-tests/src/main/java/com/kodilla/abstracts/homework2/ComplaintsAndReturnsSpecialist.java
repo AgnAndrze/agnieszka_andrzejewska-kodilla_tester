@@ -14,6 +14,6 @@ public class ComplaintsAndReturnsSpecialist extends Job {
     }
     @Override
     public void giveJob() {
-        System.out.println("Stanowisko to: specjalista ds. reklamacji i zwrotów");
+        System.out.println("Specjalista ds. reklamacji i zwrotów");
     }
 }
